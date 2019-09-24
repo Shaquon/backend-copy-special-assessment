@@ -41,7 +41,7 @@ def copy_to(path, files):
     else:
         print("Path exists")
     for file in files:
-        os.chdir(current_dir)
+        os.chdir(cwd)
         shutil.copy(file,path)
 
 
